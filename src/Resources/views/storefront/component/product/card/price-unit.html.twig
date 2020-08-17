@@ -1,0 +1,20 @@
+{% sw_extends '@Storefront/storefront/component/product/card/price-unit.html.twig' %}
+
+
+    {% block component_product_box_price %}
+        {% if product.priceRange %}
+            <p class="product-price-unit">
+            </p>
+        {% else %}
+            {{ parent() }}
+        {% endif %}
+    {% endblock %}
+
+    {% block component_product_box_price_unit %}
+        {% if product.priceRange %}
+            <p class="product-price{% if listPrice.percentage > 0 %} with-list-price{% endif %}">
+            </p>
+        {% else %}
+            {{ parent() }}
+        {% endif %}
+    {% endblock %}

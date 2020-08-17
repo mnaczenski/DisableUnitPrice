@@ -1,0 +1,32 @@
+{
+    "name": "mn/disable-unit-price",
+    "description": "Disable Unit Price",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shopware AG"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "MN\\DisableUnitPrice\\DisableUnitPrice",
+        "label": {
+            "de-DE": "Disable Unit Price",
+            "en-GB": "Disable Unit Price"
+        },
+        "description": {
+            "de-DE": "Range Unit Price",
+            "en-GB": "Range Unit Price"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "MN\\DisableUnitPrice\\": "src/"
+        }
+    }
+}
